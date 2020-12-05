@@ -6,6 +6,7 @@ An attempt at solving the shortest common superstring problem for a technical in
 
 <h1>Running the Code!</h1>
 <i>You should have node.js and npm!</i>
+
 1. On your terminal/cmd/bash/etc. navigate to a folder you wish to initiate git on.
 2. Type <strong>git init</strong>
 3. Type <strong>git clone https://github.com/kevin-jinsang-kim/shortestcommonsuperstring.git</strong>
