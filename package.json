@@ -1,0 +1,9 @@
+{
+    "name": "my-project",
+    "jest": {
+      "verbose": true
+    },
+    "scripts": {
+        "test": "jest --detectOpenHandles"
+    }
+  }
