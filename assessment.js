@@ -32,7 +32,7 @@ The following algorithm holds the last element of the array in place, and then p
 attaching the last element to each permutation.
 */
 var permutate = function (array, output, n) {
-  n = n || array.length; // set n default to array.length as n will always match array.length in our scenario
+  n = n || array.length; // set n default to array.length
   if (n === 1) {
     output(array);
   } else {
@@ -95,4 +95,8 @@ function superString(sequences) {
   return result;
 }
 
-module.exports = superString;
+module.exports = {
+  superString: superString,
+  swap: swap,
+  combineSequences: combineSequences 
+};
