@@ -7,7 +7,7 @@ const readline = require('readline').createInterface({
   output: process.stdout
 })
 
-readline.question('Please enter the array you would like to superstring: \n', input => {
+readline.question('Please enter the array you would like to superstring: \nHint: Please supply in the format "input,input2,input3" without spaces between the commas \n', input => {
   superString(input.split(','));
   readline.close()
 })
