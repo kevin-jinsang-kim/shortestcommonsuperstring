@@ -39,11 +39,11 @@ var permutate = function (array, output, n) {
     for (var i = 1; i <= n; i += 1) {
       permutate(array, output, n - 1);
       if (n % 2) {
-        var j = 1;
+        var p = 1;
       } else {
-        var j = i;
+        var p = i;
       }
-      swap(array, j - 1, n - 1); // -1 to account for javascript zero-indexing
+      swap(array, p - 1, n - 1); // -1 to account for javascript zero-indexing
     }
   }
 };
@@ -78,6 +78,9 @@ The array is then reduced, comparing the shortest outputs of each of the array,
 then the shortest solution is returned as the result.
 */
 function superString(sequences) {
+  if (sequences.length > 9) {
+    sequences.splice(9)
+  }
   if (sequences == "") {
     return "";
   }
