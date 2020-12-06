@@ -31,7 +31,7 @@ function permutate(array, output, n) {
       } else {
         var p = i;
       }
-      return swap(array, p - 1, n - 1); // -1 to account for javascript zero-indexing
+        swap(array, p - 1, n - 1); // -1 to account for javascript zero-indexing
     }
   }
 }
