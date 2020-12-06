@@ -47,6 +47,13 @@ To achieve this, I looked at permutations, and found something called the <a hre
 In short, my solution will look at an array, check for overlaps and combine strings (if no overlaps, it will concatenate), for every available permutation of the array.<br>
 For example, if I have an array, ["abcd", "cdef", "yzab"], it would look at all the possible combinations to output "yzabcdef" instead of "abcdefyzab".<br>
 
+<h3>Testing</h3>
+
+Test Driven Development was done using <a href=https://jestjs.io/>Jest</a> to perform unit tests.<br>
+The tests check that the function runs the correct way, and returns the expected outputs.<br>
+An example if given the array ["abcd","cdef"], it will return "abcdef", not "abcdcdef".<br>
+Further tests can be seen in the assessment.test.js file supplied.
+
 <h3>Limitations</h3>
 
 One of the problems with Heap's permutation, is that it will look at the number of outcomes in a n! manner, meaning that if there are 5 elements in the array, the total possible number of outcomes will be 1x2x3x4x5. <br>
